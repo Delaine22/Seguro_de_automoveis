@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #0F2C4F;
+    font-family: cursive;
+    
+}
+nav{
+    background: white;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0px 3px 10px #464646;
+}
+label.logo{
+    color: #0F2C4F;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: cursive;
+}
+.logo span{
+    color: #F56B0D;
+}
+
+nav ul{
+    float: right;
+    margin-right: 55px;
+}
+nav ul button{
+    width: 120px;
+    height: 35px;
+    font-weight: bold;
+    color: #0F2C4F;
+    border: none;
+    border-radius: 5px;
+    background: #F56B0D;
+}
+nav ul button:hover{
+    opacity: 0.8;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #0F2C4F;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 13px;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #0F2C4F;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.mycheckbox{
+    display: none;
+}
+a:hover, a.active{
+    color: #F56B0D;
+}
+@media screen and (max-width: 858px){
+    .checkbtn{
+        margin-left: 100px;
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 90vh;
+        background: white;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: ass 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .mycheckbox:checked ~ ul{
+        left: 0;
+    }
+    nav{
+       box-shadow: none;
+        
+    }
+}/*FIM DA ESTILIZACAO DA BARRA DE NAVEGACAO*/
+
+#introducao{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}  
+.content{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 60px;
+}  
+.verifie1{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.verifie1 img{
+    width: 50px;
+    height: 50px;
+}
+.verifie1 span{
+    color: #F56B0D;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.introducao_foto{
+    margin-right: 60px;
+}
+.introducao_foto img{
+    width: 700px;
+    
+} 
+#feedback h1{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+.card1,
+.card2,
+.card3{
+    width: 390px;
+    height: 220px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.5);
+}
+.client{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.personal_detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+.personal_detail p{
+    margin-left: 5px;
+    color: #F56B0D;
+    font-weight: bold;
+}
+.personal_detail img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.canal i{
+    margin-right: 20px;
+    color: #F56B0D;
+}
+.comentario{
+    text-align: center;
+    margin-top: 20px;
+}
+.comentario span{
+    color: #F56B0D;
+}
