@@ -9,18 +9,14 @@ accordions.forEach(accordion => {
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('#introducao',{
-    duration:2000,
+    duration:1000,
     rotate:{y:18}
 });
 sr.reveal('#feedback',{
-    duration:2000,
+    duration:1000,
     rotate:{y:18}
 });
 sr.reveal('#accordion',{
-    duration:2000,
-    rotate:{y:18}
-});
-sr.reveal('#footer',{
-    duration:2000,
+    duration:1000,
     rotate:{y:18}
 });

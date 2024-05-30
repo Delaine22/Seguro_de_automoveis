@@ -71,7 +71,7 @@ nav ul li a{
 a:hover, a.active{
     color: #2fc9da;
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 768px){
     .checkbtn{
         margin-left: 10px;
         display: block;
@@ -97,10 +97,7 @@ a:hover, a.active{
     .mycheckbox:checked ~ ul{
         left: 0;
     }
-    nav{
-       box-shadow: none;
-        
-    }
+    
 }/*FIM DA ESTILIZACAO DA BARRA DE NAVEGACAO*/
 
 /*ESTILIZACAO DA SECTION INTRODUCAO*/
@@ -360,40 +357,14 @@ a:hover, a.active{
         width: 100%;
     }
 }
-@media screen and(max-width: 992px){
-    .content{
-        font-weight: bold;
-        font-size: 35px;
-        margin-left: 30px;
-    }
-    .introducao_foto{
-        margin-top: 10px;
-        margin-right: 0px;
-    }
-    .introducao_foto img{
-        width: 992px;
-        border-radius: unset;
-    }
-    .card1,
-    .card2,
-    .card3{
-        width: 600px;
-    }
-    .card2,
-    .card3{
-        margin-top: 25px;
-    }
-    .foot_content{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 576px){
+
+@media screen and (max-width: 450px){
     .content{
         font-size: 30px;
         margin-left: 10px;
     }
     .introducao_foto img{
-        width: 576px;
+        width: 450px;
         border-radius: unset;
     }
     .card1,
@@ -402,12 +373,16 @@ a:hover, a.active{
         width: 500px;
     }
     .accordion_container{
-        width: 500px;
+        width: 100%;
     }
     .foo_header{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .social_media{
+        display: flex;
+        flex-direction: column;
     }
     .foot_content{
         display: flex;
