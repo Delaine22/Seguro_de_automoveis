@@ -460,7 +460,7 @@ header{
     .about a{
         display: none;
     }
-    #foot h2{
+    #footer h2{
         font-size: 15px;
     }
 }
