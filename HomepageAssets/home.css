@@ -405,18 +405,24 @@ header{
 }
 
 @media screen and (max-width: 450px){
+    header{
+        background-color: whitesmoke;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
     .content{
         font-size: 30px;
         margin-left: 10px;
     }
     .introducao_foto img{
-        width: 400px;
+        width: 370px;
         border-radius: unset;
     }
     .card1,
     .card2,
     .card3{
-        width: 400px;
+        width: 370px;
         font-size: small;
     }
     #accordion h2{
@@ -424,6 +430,12 @@ header{
     }
     .accordion_container{
         width: 400px;
+    }
+    .accordion_header{
+        font-size: 15px;
+    }
+    .accordion_body{
+        font-size: 10px;
     }
     .foo_header{
         display: flex;
