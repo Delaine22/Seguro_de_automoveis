@@ -411,6 +411,9 @@ header{
     .logo h1{
         font-size: 20px;
     }
+    #introducao{
+        margin-top: 60px;
+    }
     .content{
         font-size: 25px;
         margin-left: 10px;
