@@ -1,3 +1,15 @@
+//CRIANDO FUNCIONALIDADE A BARRA DE NAVEGACAO //
+function showmenu(){
+    let mobilemenu = document.querySelector('.mobile-menu'); 
+    if (mobilemenu.classList.contains('open')) {
+        mobilemenu.classList.remove('open');
+        document.querySelector('.icon').src="HomepageAssets/img/open.png";
+    }else {
+        mobilemenu.classList.add('open');
+        document.querySelector('.icon').src="HomepageAssets/img/close.png";
+}
+}
+// CRIANDO FUNCIONALIDADE A CLASS ACCORDION //
 const accordions = document.querySelectorAll('.accordion');
 
 accordions.forEach(accordion => {

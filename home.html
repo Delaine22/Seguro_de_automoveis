@@ -9,20 +9,38 @@
 </head>
 <body>
     <!--CRIACAO DA BARRA DE NAVEGACAO-->
-    <nav>
-        <input type="checkbox" class="mycheckbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
-        <label class="logo"><i>Autoseguros<span>X</span></i></label>
-       <ul>
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#">Insurance and Simulations</a></li>
-            <li><a href="#">Promotions and Benefits</a></li>
-            <li><a href="#">Contacts</a></li>
-            <button>Login</button>
-       </ul>
-    </nav>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><i><h1>Autoseguros<span>X</span></i></h1></div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Insurance & Simulations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+                </ul>
+            </div><!--closing class "nav-list"-->
+            <div class="button">
+                <button>Login</button>
+            </div><!--closing class button-->
+            <div class="mobile-menu-icon">
+                <button onclick="showmenu()"><img src="HomepageAssets/img/open.png" width="45px" alt="open"></button>
+            </div><!-- mobile menu icon-->
+        </nav><!--closing nav-->
+
+            <!--nav bar for mobile-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Insurance & Simulations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+            </ul>
+            <div class="button">
+                <button>Login</button>
+            </div>
+        </div><!--mobile menu -->
+    </header>
         
     <!--FIM DA CRIACAO DA BARRA DE NAVEGACAO-->
 
