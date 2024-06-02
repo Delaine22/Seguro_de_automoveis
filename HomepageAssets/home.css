@@ -412,12 +412,18 @@ header{
         font-size: 20px;
     }
     .content{
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 10px;
+    }
+    .verifie1 span{
+        font-size: 15px;
     }
     .introducao_foto img{
         width: 370px;
         border-radius: unset;
+    }
+    #feedback h1{
+        font-size: 17px;
     }
     .card1,
     .card2,
