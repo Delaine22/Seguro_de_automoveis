@@ -76,11 +76,11 @@ header{
     width: 150px;
     border-radius: 5px;
     font-weight: bold;
-    color: #464646;
-    background-color: #F56B0D;
+    color: whitesmoke;
+    background-color: orangered;
     }
     .button button:hover{
-        opacity: 0.5;
+        opacity: 0.8;
     }
     .mobile-menu-icon{
         display: none;
@@ -109,7 +109,6 @@ header{
             display: block;
         }
         .mobile-menu-icon button{
-            /*background-color: rgb(27, 27, 61);*/
             border: none;
             cursor: pointer;
         }
