@@ -111,6 +111,7 @@ header{
         .mobile-menu-icon button{
             border: none;
             cursor: pointer;
+            background-color: none;
         }
         .mobile-menu ul{
             display: flex;
