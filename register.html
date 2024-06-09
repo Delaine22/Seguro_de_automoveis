@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registerAssets/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><i><h1>Autoseguros<span>X</span></i></h1></div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Insurance & Simulations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+                </ul>
+            </div><!--closing class "nav-list"-->
+            <div class="button">
+                <button>Login</button>
+            </div><!--closing class button-->
+            <div class="mobile-menu-icon">
+                <button onclick="showmenu()"><i class="fas fa-bars icon" style="font-size: 30px; color: #2fc9da;"></i></button>
+            </div><!-- mobile menu icon-->
+        </nav><!--closing nav-->
+
+            <!--nav bar for mobile-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Insurance & Simulations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+            </ul>
+            <div class="button">
+                <button>Login</button>
+            </div>
+        </div><!--mobile menu -->  
+    </header> <!--FIM DA CRIACAO DA BARRA DE NAVEGACAO-->
+
+    <section id="form_section">
+        <div class="form_container">
+            <form id="signUp">
+                <div class="signup_header">
+                    <p>SIGN UP</p>
+                </div>
+                <div class="username">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="name" placeholder="username" id="username" class="required" oninput="usernameValidate()">
+                </div>
+                <span class="span-required">Username should at least have 4 characters</span>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="name@gmail.com" id="email" class="required" oninput="emailValidate()">
+                </div>
+                <span class="span-required">write a valid email</span>
+                <div class="password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="create a pass" id="password" class="required" oninput="passwordValidate()">
+                </div>
+                <span class="span-required">your password should at least have 8 characters</span>
+                <div class="confirm_pass">
+                    <i class="fa-regular fa-square-check"></i>
+                    <input type="password" placeholder="reapit pass" id="passwordconfirm" class="required" oninput="confirpassValidate()">
+                </div>
+                <span class="span-required">your password must be the same</span>
+                <p id="tc">
+                    <input onclick="check()" type="checkbox" id="checkbtn" required> Before creating account agree <br>
+                    with the <a href="#">Terms & Conditions</a>
+                </p>
+                <button type="submit" id="submit">SIGN UP</button>
+            </form>
+            <p class="Register">Don't have a registration ? <a href="login.html">Register now !</a></p>
+        </div><!--CLOSING FORM CONTAINER-->
+        <div class="wellcome"></div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="registerAssets/register.js"></script>
+</body>
+</html>

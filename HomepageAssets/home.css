@@ -5,7 +5,8 @@
     font-family: 'Poppins', sans-serif ;  
 }
 body{
-    color: #464646;
+    /*color: #464646;*/
+    color: black;
 }
 /*ESTILIZACAO DA HEADER*/
 header{
@@ -351,8 +352,14 @@ header{
 .simulators a,
 .about a{
     margin: 5px;
- text-decoration: none;
- color: #b8b5b5;
+    text-decoration: none;
+    /*color: #b8b5b5;*/
+    color: rgb(81, 81, 81);
+}
+.services a:hover,
+.simulators a:hover,
+.about a:hover{
+    color: blue;
 }
 .footer_foot{
     display: flex;
