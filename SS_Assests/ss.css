@@ -177,7 +177,66 @@ header{
     margin-left: 10px;
     margin-top: 10px;
 }
-
+#simulation h2{
+    margin-top: 50px;
+    text-align: center;
+}
+.simulation_form{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; 
+}
+#registrationForm{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+}
+label{
+    margin-top: 15px;
+    font-weight: bold;
+    
+}
+#name, #contribuinte, #email{
+    margin-top: 5px;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background:whitesmoke;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+}
+.matricula-container{
+    display: flex;
+    flex-direction: row;
+}
+#matricula1, #matricula2, #matricula3{
+    width: 50px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: whitesmoke;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+}
+.simulation_form button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+    border: none;
+    font-weight: bold;
+    color: whitesmoke;
+    background: orangered;
+    border-radius: 5px;
+}
+.error {
+    color: red;
+    font-size: 0.9em;
+}
 
 
 

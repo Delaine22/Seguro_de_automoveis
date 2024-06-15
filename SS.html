@@ -112,6 +112,35 @@
             </div>
         </div><!--CLOSING CLASS CONTEINER SEGUROS-->
     </section><!--CLOSING SECTION SEGUROS-->
+    <section id="simulation">
+        <h2>Olá, vamos simular o seu seguro auto</h2>
+        <div class="simulation_form">
+            <form id="registrationForm">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="contribuinte">Contribuinte</label>
+                <input type="text" id="contribuinte" name="contribuinte" required maxlength="9">
+                <span id="contribuinteError" class="error"></span>
+                
+                <label for="matricula">Matrícula do Veículo</label>
+                <div class="matricula-container">
+                    <input type="text" id="matricula1" name="matricula1" maxlength="2" required>
+                    <span>-</span>
+                    <input type="text" id="matricula2" name="matricula2" maxlength="2" required>
+                    <span>-</span>
+                    <input type="text" id="matricula3" name="matricula3" maxlength="2" required>
+                </div>
+                <span id="matriculaError" class="error"></span>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit">Simular</button>
+            </form>
+        </div>
+            
+    </section><!--CLOSING SECTION SIMULATION-->
     <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
     <script src="SS_Assests/ss.js"></script>
 </body>
