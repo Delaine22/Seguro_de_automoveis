@@ -139,6 +139,58 @@ header{
         }
     }
 /*FIM DA ESTILIZACAO DA HEADER*/
+.conteiner_seguros{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+}
+.seguroA i, .seguroB i, .seguroC i, .seguroD i, .seguroE i, .seguroF i{
+    color: rgb(114, 113, 113);
+    font-size: 40px;
+    position: absolute;
+    top: -30px;
+    right: -20px;
+    margin: 10px;
+}
+.seguroA, .seguroB, .seguroC, .seguroD, .seguroE, .seguroF{
+    margin-top: 15px;
+    margin: 15px;
+    position: relative;
+    width: 290px;
+    height: 250px;
+    border-radius: 10px;
+    /*box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);  */
+}
+.seguro_img img{
+    width: 290px;
+    height: 150px;
+    border-radius: 10px ;
+}
+.seguro_texto p{
+    font-size: small;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 450px){
     header{
         background-color: whitesmoke;
