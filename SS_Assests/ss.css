@@ -421,6 +421,19 @@ label{
     .logo h1{
         font-size: 20px;
     }
+    .main{
+        margin-left: 8px;
+    }
+    .content p{
+        font-size: medium;
+        margin-left: 8px;
+    }
+    .bord{
+        width: 400px;
+    }
+    .automovel, .travel, .saude{
+        width: 300px;
+    }
     .foot_header{
         display: flex;
         flex-direction: column;
