@@ -139,6 +139,7 @@ header{
         }
     }
 /*FIM DA ESTILIZACAO DA HEADER*/
+
 @media screen and (max-width: 450px){
     header{
         background-color: whitesmoke;
@@ -159,7 +160,7 @@ header{
     align-items: center;
     
 }
-#form_sectiom{
+#form_section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -223,9 +224,7 @@ header{
 #tc{
     margin-top: 10px;
 }
-.Register{
-    margin-top: 20px;
-}
+
 
 
 

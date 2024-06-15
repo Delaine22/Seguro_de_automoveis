@@ -141,23 +141,16 @@ header{
 /*FIM DA ESTILIZACAO DA HEADER*/
 
 .form_container{
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
 }
-#form_sectiom{
+#form_section{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     height: 90vh;
-}
-.wellcome{
-    width: 50%;
-    background-image: url(img/business.jpg);
-    background-position: center;
-    background-size: cover;
 }
 .span-required{
     color: red;
@@ -166,7 +159,7 @@ header{
 }
 #signUp{
     width: 450px;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,6 +180,9 @@ header{
     border-radius: 5px;
     margin: 10px;
 }
+::placeholder{
+    color: orangered;
+}
 #submit{
     width: 200px;
     height: 30px;
@@ -197,6 +193,9 @@ header{
     color: whitesmoke;
     background: #2fc9da;
 }
+#submit:hover{
+  opacity: 0.7;  
+}
 
 
 @media screen and (max-width: 450px){
@@ -206,7 +205,17 @@ header{
     .logo h1{
         font-size: 20px;
     }
-    .wellcome{
-        display: ;
+    #signUp{
+        width: 350px;
     }
+    #username, #email, #password, #passwordconfirm{
+        margin: 5px;
+        width: 220px;
+        padding: 5px;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
 }
