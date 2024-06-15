@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const contribuinte = document.getElementById('contribuinte').value;
         const errorSpan = document.getElementById('contribuinteError');
         if (contribuinte.length !== 9 || isNaN(contribuinte)) {
-            errorSpan.textContent = 'Número de Contribuinte deve ter 9 dígitos.';
+            errorSpan.textContent = 'Invalido.';
             return false;
         } else {
             errorSpan.textContent = '';
