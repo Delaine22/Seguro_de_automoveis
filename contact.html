@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="HomepageAssets/img/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="contactAssets/contact.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo"><i><h1>Autoseguros<span>X</span></i></h1></div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SS.html">Insurance & Simulations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#contact">Contacts</a></li>
+                </ul>
+            </div><!--closing class "nav-list"-->
+            <div class="button">
+                <a href="login.html"><button>login</button></a>
+            </div><!--closing class button-->
+            <div class="mobile-menu-icon">
+                <button onclick="showmenu()"><i class="fas fa-bars icon" style="font-size: 30px; color: #2fc9da;"></i></button>
+            </div><!-- mobile menu icon-->
+        </nav><!--closing nav-->
+
+            <!--nav bar for mobile-->
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="SS.html">Insurance & Simulations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#contact">Contacts</a></li>
+            </ul>
+            <div class="button">
+                <a href="login.html"><button>login</button></a>
+            </div>
+        </div><!--mobile menu -->
+    </header>
+
+    <section id="contact">
+        <div class="contact_details">
+            <h1>Conracta-nos <i class="fa-solid fa-phone fa-rotate-270" style="color: #2fc9da;"></i></h1>
+            <div class="info1">
+                <h2>Para mais informações</h2>
+                <div class="contact_phone">
+                    <p>
+                        <i class="fa-solid fa-square-phone" style="color: #2fc9da;"></i> 211 178 895
+                    </p>
+                    <p> Seg - sex: 9:h às 18h</p>
+                </div>
+            </div><!--CLOSING INFO1-->
+            
+            <hr>
+            <div class="info2">
+                <div class="info2A">
+                    <img src="contactAssets/imgs/informacoes.png" alt="informacoes">
+                    <p>
+                        <span class="span">Informações gerais:</span><br>
+                        info@autoinsurancex.com
+                    </p>
+                </div>
+                <div class="info2B">
+                    <img src="contactAssets/imgs/aperto-de-mao-de-parceria.png" alt="icon">
+                    <p><span class="span">
+                        Exclusivamente para questões <br>
+                        institucionais e parcerias:
+                    </span> <br>
+                    andre.pedro@autoinsurancex.com
+                </p>
+                </div>
+                <div class="info2C">
+                    <img src="contactAssets/imgs/jornalista.png" alt="media">
+                    <p>
+                        <span class="span">Jornalistas e media:</span> <br>
+                        pr@autoinsurancex.pt
+                    </p>
+                </div>
+            </div><!--CLOSING INFO2-->
+            <div class="info3">
+                <p>Segue-nos nas redes sociais</p>
+                <div class="icons">
+                    <img src="contactAssets/imgs/facebook.png" alt="facebook">
+                    <img src="contactAssets/imgs/instagram.png" alt="insta">
+                    <img src="contactAssets/imgs/linkedin.png" alt="linkedin">
+                    <img src="contactAssets/imgs/twitter.png" alt="tweeter">
+                </div>
+            </div><!--CLOSING INFO3-->
+        </div><!--CLOSING CONTACT DETAILS-->
+        <div class="contact_form">
+            <p class="firstp">Escreve uma mensagem</p>
+            <p>Precisas de ajuda ? Tens duvidas ? Da-nos o teu feedback</p>
+
+            <form id="form">
+                <label for="name">Name</label>
+                <input type="name" name="name" id="name" placeholder="O teu nome" required>
+                <div class="email_tel">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="O teu email" required>
+                    </div>
+                    <div>
+                        <label for="Telemovel">Telemovel</label>
+                        <input type="tel" name="tel" id="phone" placeholder="O teu numero" required>
+                    </div>
+                </div>
+                <label for="mensagem">Mensagem</label>
+                <input type="text" name="mensagem" id="mensagem" placeholder="Escreve a tua mensagem" required>
+            </form>
+        </div><!--CLOSING CONTACT FORM -->
+    </section><!--CLOSING SECTION CONTACT-->
+
+
+
+    <script src="contactAssets/contact.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+</body>
+</html>

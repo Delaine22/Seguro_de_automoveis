@@ -211,7 +211,7 @@ header{
     align-items: center;
     background: white;
     border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
 .bord h1{
     text-align: center;
@@ -239,18 +239,18 @@ header{
     text-decoration: none;
 }
 #simulation{
-    background-image: url(img/pexels-rdne-7362878.jpg);
+    /*background-image: url(img/pexels-rdne-7362878.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 #simulation h2{
     margin-top: 50px;
     text-align: center;
-    color: orangered;
 }
 .simulation_form{
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 #registrationForm{
@@ -260,16 +260,17 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    backdrop-filter: blur(15px);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+    border-radius: 50px;
+    background-color: whitesmoke;
+    /*backdrop-filter: blur(15px);*/
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
 label{
     margin-top: 15px;
-    font-weight: bold;
-    color: whitesmoke;   
+    font-weight: bold;  
 }
 #name, #contribuinte, #email{
-    color: whitesmoke;
+    color: #464646;
     margin-top: 5px;
     padding: 10px;
     width: 250px;
@@ -277,7 +278,7 @@ label{
     border: none;
     border-radius: 5px;
     background: transparent;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #464646;
 }
 .matricula-container{
     display: flex;
@@ -290,8 +291,8 @@ label{
     outline: none;
     border-radius: 5px;
     background: none;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, .5);
+    border: 1px solid #464646;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
 .simulation_form button{
     margin-bottom: 20px;
@@ -312,8 +313,14 @@ label{
     font-size: 0.9em;
 }
 /*ESTILIZACAO SA SECTION FOOT*/
+#footer{
+    background: whitesmoke;
+}
+.foot_logo, .social_media{
+    margin-top: 20px;
+}
 .foot_header{
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -419,7 +426,6 @@ label{
     }
     .bord{
         width: 400px;
-        box-shadow: none;
         border-radius: none;
     }
     .automovel, .travel, .saude{

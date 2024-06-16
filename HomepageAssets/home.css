@@ -199,7 +199,7 @@ header{
     height: 190px;
     background-color: whitesmoke;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
 .client{
     margin-top: 10px;
@@ -256,7 +256,7 @@ header{
     border-radius: 8px;
     padding: 12px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 .accordion_header {
     width: 100%;
@@ -300,11 +300,17 @@ header{
     transform: rotate(180deg);
 }
 /*ESTILIZACAO DA SECTION FOOTER*/
+#footer{
+    background: whitesmoke;
+}
 .foot_header{
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+.foot_logo, .social_media{
+    margin-top: 20px;
 }
 .foot_logo i{
     font-size: 25px;
