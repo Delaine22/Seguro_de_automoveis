@@ -383,20 +383,16 @@ label{
         margin-top: 20px;
     }
     .firstp{
-        font-size: 25px;
-    }
-    .contact_form p{
-        font-size: smaller;
+        font-size: 22px;
     }
     #form{
-        width: 360px;
+        width: 320px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: #2fc9da;
     }
     label{
-        margin-left: 60px;
+        margin-left: 10px;
     }
     #name, #mensagem{
         width: 300px;
