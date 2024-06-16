@@ -403,17 +403,6 @@ label{
         width: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 450px){
     header{
         background-color: whitesmoke;
@@ -430,6 +419,7 @@ label{
     }
     .bord{
         width: 400px;
+        box-shadow: none;
         border-radius: none;
     }
     .automovel, .travel, .saude{
