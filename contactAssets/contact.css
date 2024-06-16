@@ -221,6 +221,10 @@ header{
     display: flex;
     flex-direction: column;
 }
+ div{
+    display: flex;
+    flex-direction: column;
+}
 .email_tel{
     display: flex;
     flex-direction: row;
@@ -373,6 +377,48 @@ label{
     .logo h1{
         font-size: 20px;
     }
+    .contact_form{
+        width: 430px;
+        margin-top: 20px;
+    }
+    .firstp{
+        font-size: 20px;
+    }
+    .contact_form p{
+        font-size: smaller;
+    }
+    #form{
+        width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    label{
+        margin-left: 60px;
+    }
+    #name, #mensagem{
+        width: 300px;
+        align-self: center;
+    }
+    .email_tel{
+        display: flex;
+        flex-direction: column;
+    }
+    #email, #phone{
+        align-self: center;
+        width: 300px;
+    }
+    .ct{
+        font-size: smaller;
+        text-align: center;
+    }
+
+
+
+
+
+
+
     .foot_header{
         display: flex;
         flex-direction: column;
