@@ -15,7 +15,7 @@
                 <ul>
                     <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="SS.html">Insurance & Simulations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pb.html">Promotions & Benefits</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#contact">Contacts</a></li>
                 </ul>
             </div><!--closing class "nav-list"-->
@@ -32,7 +32,7 @@
             <ul>
                 <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="SS.html">Insurance & Simulations</a></li>
-                <li class="nav-item"><a class="nav-link" href="#project">Promotions & Benefits</a></li>
+                <li class="nav-item"><a class="nav-link" href="pb.html">Promotions & Benefits</a></li>
                 <li class="nav-item"><a class="nav-link active" href="#contact">Contacts</a></li>
             </ul>
             <div class="button">
@@ -113,7 +113,10 @@
                     <label for="mensagem">Mensagem</label>
                     <input type="text" name="mensagem" id="mensagem" placeholder="Escreve a tua mensagem" required>
                 </div>
-                <P class="tc"> <input type="checkbox">Aceito os <a href="#">Termos & Condicoes</a> e <br> <a href="#">Politicaas de Privacidade</a></p>
+                <p id="tc">
+                    <input onclick="check()" type="checkbox" id="checkbtn" required> Before creating account agree <br>
+                    with the <a href="#">Terms & Conditions</a>
+                </p>
                     <button type="submit">Enviar mensagem</button>
             </form>
         </div><!--CLOSING CONTACT FORM -->

@@ -258,6 +258,9 @@ label{
     border-radius: 5px;
     outline: none;
 }
+#tc{
+    text-align: center;
+}
 #form button{
     margin-top: 20px;
     margin-bottom: 20px;

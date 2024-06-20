@@ -137,180 +137,172 @@ header{
         }
     }
 /*FIM DA ESTILIZACAO DA HEADER*/
-
-/*ESTILIZACAO DA SECTION INTRODUCAO*/
-#introducao{
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}  
-.content{
-    font-weight: bold;
-    font-size: 40px;
-    margin-left: 60px;
-}  
-.verifie1{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-}
-.verifie1 img{
-    width: 50px;
-    height: 50px;
-}
-.verifie1 span{
-    color: #2fc9da;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.introducao_foto{
-    margin-right: 60px;
-}
-.introducao_foto img{
-    width: 700px;
-    border-radius: 10px;
-    
-} /*FIM DA ESTILIZACAO INTRODUCAO*/
-
-/*ESTILIZACAO DA SECTION FEEDBACK*/
-#feedback h1{
-    margin-top: 100px;
-    text-align: center;
-    font-weight: bold;
-}
-.container{
-    width: 95%;
+#slides{
+    width: 900px;
+    height: 450px;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
-    margin-top: 50px;
-}
-.card1,
-.card2,
-.card3{
-    width: 400px;
-    height: 190px;
-    background-color: whitesmoke;
-    border-radius: 10px;
+    justify-content: center;
+    margin-top: 90px;
+    background-color: orangered;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
-.client{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.carousel {
+    position: relative;
+    /*width: 100%;*/
+    max-width: 850px;
+    /*margin: auto;*/
+    overflow: hidden;
+    background: white;
+    border-radius: 20px;
 }
-.personal_detail{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20px;
-}
-.personal_detail p{
-    margin-left: 5px;
-    color: #2fc9da;
-    font-weight: bold;
-}
-.personal_detail img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-.canal i{
-    margin-right: 20px;
-    color: #2fc9da;
-}
-.comentario{
-    color: #b8b5b5;
-    text-align: center;
-    margin-top: 20px;
-}
-.comentario span{
-    color: #2fc9da;
-}/*FIM DA ESTILIZACAO DA SECTION FEEDBACK*/
 
-/*ESTILIZACAO DA SECTION ACORDION*/
-#accordion h2{
-    text-align: center;
-    margin-top: 70px;
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
-.accordion_container{
+
+.carousel-item {
+    /*min-width: 100%;*/
+    min-width: 850px;
+    height: 400px;
+    box-sizing: border-box;
+}
+#vantagens{
+    background: whitesmoke;
+}
+#vantagens h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+}
+.contain_vantagens{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: auto;
+    margin-top: 0px;
+}
+.vantagemCarro,
+.vantagemCasa,
+.vantagemHealth{
+    margin: 10px;
+    width: 250px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: 700px;
-    margin-top: 30px;
-}
-.accordion {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 12px;
-    cursor: pointer;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-}
-.accordion_header {
-    width: 100%;
-    border: none;
-    background-color: transparent;
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    font-size: 17px;
-    cursor: pointer;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
 }
-.accordion_header i {
-    color: #2fc9da;
+.img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.accordion_header span {
-    color: #2fc9da;
+.img span{
+    color: #464646;
     font-weight: bold;
-    max-width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-top: 10px;
 }
-.accordion_body {
+.img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.content p{
+    font-size: smaller;
+}
+.ssbtn{
+    text-align: center;
+    background-color: whitesmoke;
+}
+.ssbtn button{
     margin-top: 20px;
-    font-size: 15px;
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: opacity .3s;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 35px;
+    border: none;
+    color: whitesmoke;
+    background: orangered;
+    font-weight: bold;
 }
-.accordion_body.active {
-    height: 100%;
-    opacity: 1;
-    padding: 5px 0px;
+.promotion-container-header{
+    background-color: #464646;
+    color: whitesmoke;
+    margin-top: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 950px;
+    margin: auto;
 }
-.arrow {
-    transition: transform .2s linear;
+.promotion-table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    
+}
+.promotion-table1,
+.promotion-table2,
+.promotion-table3,
+.promotion-table4,
+.promotion-table5{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-weight: bold;
+font-size: 15px;
+position: relative;
+width: 190px;
+height: 230px;
+background-image: linear-gradient(to right, orangered, #2fc9da ,orangered, #00f);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
 }
 
-.accordion:has(.active) .arrow {
-    transform: rotate(180deg);
+.promotion-table1 span,
+.promotion-table2 span,
+.promotion-table3 span,
+.promotion-table4 span,
+.promotion-table5 span{
+    font-size: 30px;
 }
-/*ESTILIZACAO DA SECTION FOOTER*/
+.promotion-table1 i,
+.promotion-table2 i,
+.promotion-table3 i,
+.promotion-table4 i,
+.promotion-table5 i{
+color: #2fc9da;
+font-size: 30px;
+top: 70px;
+right: -20px;
+margin: 10px;
+position: absolute;
+}
+
 #footer{
     background: whitesmoke;
+}
+.foot_logo, .social_media{
+    margin-top: 20px;
 }
 .foot_header{
     margin-top: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-.foot_logo, .social_media{
-    margin-top: 20px;
 }
 .foot_logo i{
     font-size: 25px;
@@ -383,37 +375,7 @@ header{
     color: whitesmoke;
     text-decoration: none;
 }/*FIM DA ESTILIZACAO DA SECTION FOOTER*/
-
-/*@MEDIA QUERY PARA TABLETS*/
 @media screen and (max-width: 768px){
-    .content{
-        font-weight: bold;
-        font-size: 35px;
-        margin-left: 30px;
-    }
-    .introducao_foto{
-        margin-top: 10px;
-        margin: auto;
-    }
-    .introducao_foto img{
-        width: 600px;
-        border-radius: unset;
-    }
-    .card1,
-    .card2,
-    .card3{
-        width: 600px;
-    }
-    .card2,
-    .card3{
-        margin-top: 25px;
-    }
-    .accordion_container{
-        width: 600px;
-    }
-    .accordion_header{
-        font-size: 17px;
-    }
     .foot_content{
         width: 100%;
     }
@@ -428,52 +390,40 @@ header{
     }
 }
 @media screen and (max-width: 450px){
+    body{
+        background-color: whitesmoke;
+    }
     header{
         background-color: whitesmoke;
     }
     .logo h1{
         font-size: 20px;
     }
-    #introducao{
-        margin-top: 60px;
+    #slides{
+        margin-top: 20px;
+        width: 400px;
     }
-    .content{
-        font-size: 25px;
-        margin-left: 10px;
+    .carousel{
+        max-width: 390px;
     }
-    .verifie1 span{
-        font-size: 15px;
-    }
-    .introducao_foto img{
-        width: 370px;
-        border-radius: unset;
-    }
-    #feedback h1{
-        font-size: 17px;
-    }
-    .card1,
-    .card2,
-    .card3{
-        width: 370px;
-        font-size: small;
-    }
-    #accordion h2{
-        font-size: 17px;
-    }
-    .accordion_container{
-        width: 370px;
-    }
-    .accordion_header{
-        font-size: 14px;
-    }
-    .accordion_body{
-        text-align: start;
-        font-size: 10px;
+    .carousel-item{
+        min-width: 390px;
     }
     .foot_header{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .promotion-container-header{
+        width: 390px;
+    }
+    #vantagens h1{
+        font-size: 15px;
+    }
+    .vantagemCarro,
+    .vantagemCasa,
+    .vantagemHealth{
+        margin-top: 5px;
     }
     .social_media{
         display: flex;
