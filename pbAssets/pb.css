@@ -401,13 +401,13 @@ position: absolute;
     }
     #slides{
         margin-top: 20px;
-        width: 400px;
+        width: 390px;
     }
     .carousel{
-        max-width: 390px;
+        max-width: 300px;
     }
     .carousel-item{
-        min-width: 390px;
+        min-width: 300px;
     }
     .foot_header{
         display: flex;
