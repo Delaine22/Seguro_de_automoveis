@@ -417,6 +417,13 @@ position: absolute;
     .promotion-container-header{
         width: 390px;
     }
+    .promotion-table1,
+    .promotion-table2,
+    .promotion-table3,
+    .promotion-table4,
+    .promotion-table5{
+        width: 150px;
+}
     #vantagens h1{
         font-size: 15px;
     }
