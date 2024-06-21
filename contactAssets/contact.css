@@ -276,6 +276,10 @@ label{
 #form button:hover{
     opacity: 0.9;
 }
+#map{
+    margin-top: 50px;
+}
+
 #footer{
     background: whitesmoke;
 }
