@@ -25,23 +25,14 @@ function showmenu() {
 
 // FIM DA CRIACAO DA FUNCIONALIDADE DA BARRA DE NAVEHACAO
 
-//FUNCIONALIDADE PARA CAROUSEL
-   // Define o índice inicial da imagem como 0
-let currentIndex = 0;
 
-// Seleciona o container das imagens e todas as imagens dentro dele
-const carouselInner = document.querySelector('.carousel-inner');
-const items = document.querySelectorAll('.carousel-item');
-const totalItems = items.length;
-
-// Função para mostrar a próxima imagem
-function showNextImage() {
-    // Avança o índice para a próxima imagem
-    currentIndex = (currentIndex + 1) % totalItems;
-
-    // Ajusta a transformação do container para mostrar a próxima imagem
-    carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const output = document.getElementById('output');
+    
+    urlParams.forEach((value, key) => {
+        const para = document.createElement('p');
+        para.textContent = `${key}: ${value}`;
+        output.appendChild(para);
+    });
 }
-
-// Define o intervalo para avançar as imagens a cada 3 segundos
-setInterval(showNextImage, 3000);

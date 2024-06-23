@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif ;  
+}
+body{
+    color: #464646;    
+}
+/*ESTILIZACAO DA HEADER*/
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .5);
+}  
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+} 
+.logo{
+    /*color: #F56B0D;*/
+    display: flex;
+    align-items: center;
+}
+.logo h1{
+    color: orangered;
+    font-size:40px ;
+    font-family: cursive;
+    font-weight: bold;
+}
+.logo span{
+    color: #2fc9da;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item{
+    margin: 0 15px;
+}
+.nav-link.active{
+    color: #2fc9da;
+}
+.nav-link{
+    color: orangered;
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+.nav-link:after{
+    content: "";
+    position: absolute;
+    background: #2fc9da;
+    height: 3px;
+    width: 0;
+    right: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color: #F56B0D;
+}
+.nav-link:hover:after{
+    width: 100%;
+}
+.button button{
+    border: none;
+    padding: 10px 15px;
+    width: 150px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: #2fc9da;
+    }
+    .button button:hover{
+        opacity: 0.8;
+    }
+    .mobile-menu-icon{
+        display: none;
+    }
+    .mobile-menu{
+        display: none;
+    }
+
+    @media screen and (max-width: 768px){
+        header{
+            background-color: whitesmoke;
+        }
+        .nav-bar{
+            padding: 1.5rem 4rem;
+        } 
+        .logo h1{
+            font-size: 30px;
+        }
+        .nav-item{
+            display: none;
+        }  
+        .button{
+            display: none;
+        } 
+        .mobile-menu-icon{
+            display: block;
+        }
+        .mobile-menu-icon button{
+            border: none;
+            cursor: pointer;
+            background-color: whitesmoke;
+        }
+        .mobile-menu ul{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        .mobile-menu .nav-item{
+            display: block;
+            padding-top: 1.2rem;
+        }
+        .mobile-menu .button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 1rem 2rem;
+        }
+        .mobile-menu .button button{
+            color: whitesmoke;
+            width: 200px;
+            background-color: #2fc9da;
+        }
+        .open{
+            display: block;
+        }
+    }
+/*FIM DA ESTILIZACAO DA HEADER*/
+  
+
+.table_container{
+   display: flex; 
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 760px;
+   align-items: center;
+   justify-content: center;
+   margin: auto;
+   margin-top: 100px;
+   background: whitesmoke;
+  /* border: 2px solid orangered;*/
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+}
+.table_health h1,
+.table_personal h1,
+.table_automovel h1{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.table_health p,
+.table_automovel p,
+.table_personal p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: smaller;
+    font-weight: bold;
+}
+.table_health,
+.table_personal,
+.table_automovel{
+    width: 250px;
+    height: 300px;
+    border: 2px solid orangered;
+}
+@media screen and (max-width: 450px){
+    header{
+        background-color: whitesmoke;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+  
+    .table_container{
+        margin-top: 30px;
+        width:400px;
+        background: none;
+}
+    .table_health,
+    .table_personal,
+    .table_automovel{
+        width: 300px;
+        border: none;
+        margin-top: 20px;
+        background: whitesmoke;
+    }
+}
