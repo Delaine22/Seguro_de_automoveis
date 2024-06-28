@@ -19,19 +19,8 @@ header{
     justify-content: space-between;
     padding: 1.5rem 6rem;
 } 
-.logo{
-    /*color: #F56B0D;*/
-    display: flex;
-    align-items: center;
-}
-.logo h1{
-    color: orangered;
-    font-size:40px ;
-    font-family: cursive;
-    font-weight: bold;
-}
-.logo span{
-    color: #2fc9da;
+.logo img{
+    width: 150px;
 }
 .nav-list{
     display: flex;
@@ -382,8 +371,8 @@ label{
     header{
         background-color: whitesmoke;
     }
-    .logo h1{
-        font-size: 20px;
+    .logo img{
+        width: 100px;
     }
     .contact_form{
         width: 390px;
@@ -417,13 +406,6 @@ label{
         font-size: smaller;
         text-align: center;
     }
-
-
-
-
-
-
-
     .foot_header{
         display: flex;
         flex-direction: column;
